@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Practice 5B – Black Goose Bistro Summer Menu (Exercises 13‑1 to 13‑5)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Marko+One&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --accent: #6b2c91;
+      --ink: #222;
+      --muted: #555;
+    }
+    html, body {
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: Georgia, serif;
+      font-size: 100%;
+      line-height: 1.75;
+      color: var(--ink);
+      margin: 0 12%;
+      background: #fff url("images/plaid.png") repeat; /* 13-3: tiled background */
+    }
+    #header {
+      margin-top: 0;
+      padding: 3rem 1rem 2rem;
+      text-align: center;
+      position: relative;
+      background: #fff;
+      border-bottom: 4px solid var(--accent);
+    }
+    /* 13-1: add logo */
+    #header .logo {
+      display: block;
+      margin: 0 auto 1rem;
+      max-width: 220px;
+      height: auto;
+    }
+    /* 13-2: add decorative goose shadow image */
+    #header::after {
+      content: "";
+      position: absolute;
+      right: -40px;
+      top: 10px;
+      width: 200px;
+      height: 200px;
+      background: url("images/goose_shadow.png") no-repeat center/contain;
+      opacity: 0.25;
+      pointer-events: none;
+    }
+    h1 {
+      font-family: "Marko One", Georgia, serif;
+      font-weight: 400;
+      font-size: clamp(1.8rem, 2.6vw + 1rem, 3rem);
+      letter-spacing: 1px;
+      margin: 0.25rem 0 0.5rem;
+      color: var(--accent);
+    }
+    h2 {
+      font-family: "Marko One", Georgia, serif;
+      font-weight: 400;
+      font-size: clamp(1.4rem, 1.2vw + 1rem, 2rem);
+      color: var(--accent);
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 0.25rem;
+      margin-top: 2.25rem;
+    }
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    a:hover, a:focus {
+      text-decoration: underline;
+    }
+    .price {
+      float: right;
+      font-style: italic;
+      color: var(--muted);
+    }
+    #info p {
+      margin: 0.25rem 0;
+    }
+    #warning, .warning {
+      font-size: 0.9rem;
+      color: #8a0000;
+      border-top: 1px dashed #8a0000;
+      margin-top: 2rem;
+      padding-top: 0.75rem;
+    }
+    /* 13-4: custom list marker using image */
+    ul.custom-dots {
+      list-style: none;
+      padding-left: 0;
+    }
+    ul.custom-dots li {
+      padding-left: 28px;
+      position: relative;
+      margin: 0.4rem 0;
+    }
+    ul.custom-dots li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0.3rem;
+      width: 18px;
+      height: 18px;
+      background: url("images/purpledot.png") no-repeat center/contain;
+    }
+    /* 13-5: highlight new items with bullseye icon */
+    .newitem {
+      background-image: url("images/bullseye.png");
+      background-repeat: no-repeat;
+      background-position: 0 0.2rem;
+      padding-left: 28px;
+    }
+    /* Definition list styling */
+    dl {
+      margin: 0;
+    }
+    dt {
+      font-weight: bold;
+      margin-top: 0.75rem;
+    }
+    dd {
+      margin: 0 0 0.5rem 0;
+    }
+    /* Simple responsive wrap for wide price floats */
+    @media (max-width: 520px) {
+      .price {
+        float: none;
+        display: inline-block;
+        margin-left: 0.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header id="header" role="banner">
+    <img src="images/blackgoose.png" alt="Black Goose Bistro logo" class="logo" />
+    <h1>Black Goose Bistro</h1>
+    <p id="info"><span class="label">Summer Menu</span> • <time datetime="2025-06">June–August</time></p>
+  </header>
+
+  <main id="content" role="main">
+    <div id="header">
+<h1>Black Goose Bistro &bull; Summer Menu</h1>
+
+<div id="info">
+<p>Baker's Corner, Seekonk, Massachusetts<br>
+<span class="label">Hours: Monday through Thursday:</span> 11 to 9, <span class="label">Friday and Saturday;</span> 11 to midnight</p>
+<ul>
+<li><a href="#appetizers">Appetizers</a></li>
+<li><a href="#entrees">Main Courses</a></li>
+<li><a href="#toast">Traditional Toasts</a></li>
+<li><a href="#dessert">Dessert Selection</a></li>
+</ul>
+</div>
+</div>
+
+<div id="appetizers">
+<h2>Appetizers</h2>
+<p>This season, we explore the spicy flavors of the southwest in our appetizer collection.</p>
+
+<dl>
+<dt>Black bean purses</dt>
+<dd>Spicy black bean and a blend of mexican cheeses wrapped in sheets of phyllo and baked until golden. <span class="price">$3.95</span></dd>
+
+<dt class="newitem">Southwestern napoleons with lump crab &mdash; <strong>new item!</strong></dt>
+<dd>Layers of light lump crab meat, bean and corn salsa, and our handmade flour tortillas. <span class="price">$7.95</span></dd>
+</dl>
+</div>
+
+<div id="entrees">
+
+<h2>Main courses</h2>
+<p>Big, bold flavors are the name of the game this summer. Allow us to assist you with finding the perfect wine.</p>
+
+
+<dl>
+
+<dt class="newitem">Jerk rotisserie chicken with fried plantains &mdash; <strong>new item!</strong></dt>
+<dd>Tender chicken slow-roasted on the rotisserie, flavored with spicy and fragrant jerk sauce and served with fried plantains and fresh mango. <strong>Very spicy.</strong> <span class="price">$12.95</span></dd>
+
+<dt>Shrimp sate kebabs with peanut sauce</dt>
+<dd>Skewers of shrimp marinated in lemongrass, garlic, and fish sauce then grilled to perfection. Served with spicy peanut sauce and jasmine rice. <span class="price">$12.95</span></dd>
+
+<dt>Grilled skirt steak with mushroom fricasee</dt>
+<dd>Flavorful skirt steak marinated in asian flavors grilled as you like it<sup>*</sup>. Served over a blend of sauteed wild mushrooms with a side of blue cheese mashed potatoes. <span class="price">$16.95</span></dd>
+</dl>
+
+</div>
+
+<div id="toast">
+<h2>Traditional Toasts</h2>
+<p>The ultimate comfort food, our traditional toast recipes are adapted from <a href="http://www.gutenberg.org/files/13923/13923-h/13923-h.htm"><cite>The Whitehouse Cookbook</cite></a> published in 1887.</p>
+
+<dl>
+<dt>Cream toast</dt>
+<dd>Simple cream sauce over highest quality toasted bread, baked daily. <span class="price">$3.95</span></dd>
+
+<dt>Mushroom toast</dt>
+<dd>Layers of light lump crab meat, bean and corn salsa, and our handmade flour tortillas. <span class="price">$6.95</span></dd>
+
+<dt>Nun's toast</dt>
+<dd>Onions and hard-boiled eggs in a cream sauce over buttered hot toast. <span class="price">$6.95</span></dd>
+
+<dt>Apple toast</dt>
+<dd>Sweet, cinnamon stewed apples over delicious buttery grilled bread. <span class="price">$6.95</span></dd>
+</dl>
+</div>
+
+<div id="dessert">
+<h2>Dessert Selection</h2>
+<p>Be sure to save room for our desserts, made daily by our own <a href="http://www.jwu.edu/college.aspx?id=19510">Johnson & Wales</a> trained pastry chef.</p>
+
+<dl>
+<dt class="newitem">Lemon chiffon cake &mdash; <strong>new item!</strong></dt>
+<dd>Light and citrus flavored sponge cake with buttercream frosting as light as a cloud. <span class="price">$2.95</span></dd>
+
+<dt class="newitem">Molten chocolate cake</dt>
+<dd>Bubba's special dark chocolate cake with a warm, molten center. Served with or without a splash of almond liqueur. <span class="price">$3.95</span></dd>
+</dl>
+</div>
+
+<p class="warning"><sup>*</sup> We are required to warn you that undercooked food is a health risk.</p>
+  </main>
+
+  <footer role="contentinfo">
+    <p class="warning" id="warning"><sup>*</sup> We are required to warn you that undercooked food is a health risk.</p>
+  </footer>
+</body>
+</html>
