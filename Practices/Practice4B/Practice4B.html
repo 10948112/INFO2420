@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>CSS3Fonts – Practice 4B</title>
+  <style>
+    @font-face {
+      font-family: "Darkh4";
+      src: url("fonts/Darkh4.eot");
+      src: local("Darkh4"),
+           url("fonts/Darkh4.ttf") format("truetype");
+      font-display: swap;
+    }
+
+    :root {
+      --headline-font: "Darkh4", Georgia, serif;
+      --body-font: Arial, sans-serif;
+    }
+
+    body {
+      font-family: var(--body-font);
+      margin: 0;
+      line-height: 1.5;
+    }
+
+    header, main, footer {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 1rem;
+    }
+
+    header h1 {
+      font-family: var(--headline-font);
+    }
+
+    .radius-demo {
+      border: 2px solid #888;
+      padding: 1rem;
+      margin: 1rem 0;
+      border-radius: 12px;
+    }
+
+    .shadow-demo {
+      border: 1px solid #ccc;
+      padding: 1rem;
+      margin: 1rem 0;
+      box-shadow: 4px 6px 12px 0 rgba(0,0,0,0.15);
+    }
+    .shadow-demo h3 {
+      text-shadow: 2px 2px 3px rgba(0,0,0,0.25);
+      margin-top: 0;
+    }
+
+    .bg-demo {
+      border: 1px dashed #bbb;
+      padding: 1rem;
+      margin: 1rem 0;
+      height: 180px;
+      background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='80' height='80'><rect width='80' height='80' fill='%23f2f2f2' /><rect x='0' y='0' width='40' height='40' fill='%23dcdcdc' /><rect x='40' y='40' width='40' height='40' fill='%23dcdcdc' /></svg>");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      display: grid;
+      place-items: center;
+      text-align: center;
+    }
+
+    .wrap-demo {
+      border: 1px solid #ddd;
+      padding: 1rem;
+      margin: 1rem 0;
+      width: 320px;
+      word-wrap: break-word;
+      overflow-wrap: anywhere;
+    }
+
+    hr { margin: 1.25rem 0; }
+
+    footer p {
+      font-size: 0.9rem;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>CSS3Fonts – Practice 4B</h1>
+    <p>This page demonstrates CSS properties including border-radius, box-shadow, background-size, word-wrap, and @font-face.</p>
+  </header>
+
+  <main>
+    <section class="radius-demo">
+      <h2>1) border-radius</h2>
+      <p>This box uses <code>border-radius: 12px</code>. Try changing the values to see different shapes.</p>
+    </section>
+
+    <section class="shadow-demo">
+      <h2>2) box-shadow and text-shadow</h2>
+      <h3>Heading with a text-shadow</h3>
+      <p>The container has a <code>box-shadow</code>. Adjust the offsets and blur to change its look.</p>
+    </section>
+
+    <section class="bg-demo">
+      <div>
+        <h2>3) background-size</h2>
+        <p>Currently using <code>background-size: contain</code>.</p>
+      </div>
+    </section>
+
+    <section class="wrap-demo">
+      <h2>4) word-wrap / overflow-wrap</h2>
+      <p>ExtremelyLongURLExample: https://ThisIsAVeryLongURLThatWouldNormallyOverflow.com/section/with/a/very/long/path</p>
+      <p>Using <code>word-wrap: break-word</code> and <code>overflow-wrap: anywhere</code> keeps it contained.</p>
+    </section>
+
+    <hr />
+
+    <section>
+      <h2>5) @font-face</h2>
+      <p style="font-family: var(--headline-font); font-size: 1.35rem;">
+        This line uses the custom <strong>Darkh4</strong> font if available, or Georgia/serif as fallback.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Practice 4B complete.</p>
+  </footer>
+</body>
+</html>
