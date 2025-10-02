@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Class Schedule</title>
+  <style>
+    /* Center the table using a wrapper div */
+    .center-div {
+      text-align: center;
+    }
+
+    /* Table centering and width */
+    .schedule-table {
+      margin: auto;
+      width: 550px;
+      border-collapse: collapse;
+      border: 2px solid black;
+    }
+
+    /* Borders and spacing */
+    th, td {
+      border: 1px solid black;
+      padding: 8px;
+      text-align: center;
+    }
+
+    /* Caption style */
+    .table-caption {
+      font-weight: bold;
+      font-size: 1.2em;
+      color: #eb86d9; /* pink */
+      margin-bottom: 10px;
+    }
+
+    /* First column (times) */
+    .times {
+      background-color: #f6eded;
+      width: 25%;
+    }
+
+    /* Day columns */
+    .days {
+      background-color: #f799c3;
+    }
+  </style>
+</head>
+<body>
+
+<div class="center-div">
+  <table class="schedule-table">
+    <caption class="table-caption">My Class Schedule</caption>
+
+    <!-- Column Groups -->
+    <colgroup>
+      <col class="times">
+    </colgroup>
+    <colgroup span="5" class="days"></colgroup>
+
+    <!-- Table Headings -->
+    <tr>
+      <th>Classes</th>
+      <th>Monday</th>
+      <th>Tuesday</th>
+      <th>Wednesday</th>
+      <th>Thursday</th>
+      <th>Friday</th>
+    </tr>
+
+    
+    <tr>
+      <th>Economics</th>
+      <td>Online</td>
+      <td>Online</td>
+      <td>Online</td>
+      <td>Online</td>
+      <td>Online</td>
+    </tr>
+    <tr>
+      <th>Photoshop</th>
+      <td>Online</td>
+      <td>Online</td>
+      <td>Online</td>
+      <td>Online</td>
+      <td>Online</td>
+    </tr>
+    <tr>
+      <th>Computer Programing</th>
+      <td>Online</td>
+      <td>11:30 - 12:45</td>
+      <td>Online</td>
+      <td>11:30-12:45</td>
+      <td>Online</td>
+    </tr>
+    <tr>
+      <th>Web Development</th>
+      <td>Online</td>
+      <td>Online</td>
+      <td>Online</td>
+      <td>Online</td>
+      <td>Online</td>
+    </tr>
+      <th>Written Business Communications</th>
+      <td>Online</td>
+      <td>1:00 - 2:45</td>
+      <td>Online</td>
+      <td>1:00 - 2:45</td>
+      <td>Online</td>
+   </tr>
+  </table>
+</div>
+
+</body>
+</html>
+
