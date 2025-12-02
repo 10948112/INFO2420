@@ -1,0 +1,97 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body   
+{
+	
+	background-color: #fff6e6;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:medium;
+	color: midnightblue; 
+	
+}
+
+header 
+{
+    width: 900px;
+    height: 200px;
+    background-color: antiquewhite;
+    text-align: center;
+    padding-top: 10px;
+    margin: auto;
+}
+
+section
+{
+	width: 900px;
+	background-image: url('Images/2colback.jpg'); 
+	background-repeat: repeat-y;
+	overflow: hidden;
+	margin: auto; 
+}
+
+nav
+{
+	float: left;
+	width: 250px;
+}
+
+article
+{
+	float: left;
+	width: 650px;
+	text-align: center; 
+}
+
+footer
+{
+	text-align: center;
+	width: 900px;
+	height: 70px;
+	background-color:antiquewhite;
+	margin: auto;
+	
+}
+
+.logoleft
+{
+	float: left;
+	padding-top: 0px;
+	padding-left: 15px;
+}
+
+nav a
+{
+	boarder: 6px inset #CCCCCC;
+	background-color: antiquewhite;
+	line-height: 250%;
+	font-weight: bold;
+	font-size: 35px;
+	color:pink;
+	text-decoration: none;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-left: 20px;
+	font-family: Vivaldi;
+			
+}
+
+nav a:hover
+{
+	color: antiquewhite;
+	border: 2px outset #CCCCCC; 
+		
+}
+
+h1
+{
+	color: midnightblue;
+	text-align: center;
+	font-size: xx-large;
+	
+}
+
+p { color: midnightblue}
+
+
+
